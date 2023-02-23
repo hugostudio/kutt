@@ -109,7 +109,7 @@ const Header: FC = () => {
           >
             <Image
               src="/images/logo.svg"
-              alt="kutt logo"
+              alt="Goto-App logo"
               width={18}
               height={24}
             />
@@ -128,7 +128,7 @@ const Header: FC = () => {
             pt={0}
             pb="2px"
           >
-            <Li>
+            {/* <Li>
               <ALink
                 href="//github.com/thedevs-network/kutt"
                 target="_blank"
@@ -138,7 +138,7 @@ const Header: FC = () => {
               >
                 GitHub
               </ALink>
-            </Li>
+            </Li> */}
             <Li>
               <ALink
                 href="/report"

@@ -17,9 +17,12 @@ services:
       DB_USER: user
       DB_PASSWORD: pass
       REDIS_HOST: redis
+      REDIS_URL: redis://redis:6379
 
   redis:
     image: redis:6.0-alpine
+    ports:
+      - "6379:6379"
     volumes:
       - redis_data:/data
 
@@ -29,6 +32,8 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: kutt
+    ports:
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
